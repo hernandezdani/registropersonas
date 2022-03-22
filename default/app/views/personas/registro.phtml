@@ -1,0 +1,44 @@
+<h1>Registro de Personas</h1>
+<div class="dividir"></div>
+<div class="row">
+    <?= form::open('personas/guardar','post','class="cols12"');?>
+     <div class="row">
+         <div class="input-field col s6">
+             <?= Form::text('persoonas.nombres')?>
+             <?= form::label('Nombres','nombres')?>
+             </div>
+         <div class="input-field col s6">
+             <?= Form::text('persoonas.apelidos')?>
+             <?= form::label('Apellidos','apellidos')?>
+            </div>
+     </div>
+     <div>
+       <div class="row">
+         <div class="input-field col s6">
+             <?= Form::number('persoonas.edad')?>
+             <?= form::label('Edad','edad')?>
+             </div>
+         <div class="input-field col s6">
+             <?= Form::text('persoonas.telefoo')?>
+             <?= form::label('Telefono','telefono')?>
+            </div>
+       </div>
+       <div class="row">
+           <div class="input-field col s6">
+             <?= Form::text('persoonas.dui')?>
+             <?= form::label('DUI','dui')?>
+           </div>
+           <div class="input-field col s6">
+             <?= Form::text('persoonas.email')?>
+             <?= form::label('E-mail','email')?>
+         </div>
+       </div>
+      <div class="row">
+           <div class="input-field col s6">
+             <?= form::date('personas.fecha')?>
+             <?= form::label('Fecha','fecha')?>
+            </div>
+        </div>
+    </div>
+    <?= form::close()?>
+</div>
